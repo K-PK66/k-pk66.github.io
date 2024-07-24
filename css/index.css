@@ -1528,7 +1528,7 @@ h6 {
   position: relative;
   margin: 20px 0 14px;
   color: var(--text-highlight-color);
-  font-weight: bold;
+  font-size: bold;
 }
 h1 code,
 h2 code,
