@@ -78,3 +78,16 @@ body{
     font-family: 'A-OTF Shin Go Pro R Sub','Roboto Condensed', sans-serif;
     font-weight: 400;
 }
+
+div#bilibiliLink:hover {
+    border: 1px solid #f1bcd8 !important; /*边框颜色*/
+    background-color: #f1bcd8; /*DiV背景颜色*/
+    color: white !important;
+    transition: background-color 0.25s ease;
+}
+
+div#weiboLink:hover {
+    border:1px solid rgba(216,54,54)!important;  /*边框颜色*/
+    background-color: gold;
+    transition: background-color 250ms ease;
+}
