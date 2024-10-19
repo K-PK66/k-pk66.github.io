@@ -91,3 +91,16 @@ div#weiboLink:hover {
     background-color: gold;
     transition: background-color 250ms ease;
 }
+
+div#zhihuLink:hover {
+    border: 1px solid #3373ee !important; /*边框颜色*/
+    background-color: #3373ee; /*DiV背景颜色*/
+    color: white !important;
+    transition: background-color 0.25s ease;
+}
+div#weChatLink:hover {
+    border: 1px solid #66dd7b !important; /*边框颜色*/
+    background-color: #66dd7b; /*DiV背景颜色*/
+    color: white !important;
+    transition: background-color 0.25s ease;
+}
