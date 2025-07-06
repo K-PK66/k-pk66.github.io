@@ -65,6 +65,150 @@
     src: local('A-OTF Shin Go Pro H'), url('../fonts/AOTFShinGoProHeavy.woff') format('woff');
 }
 
+/* 常规体 */
+@font-face {
+    font-family: 'MapleMono NF CN';
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal;
+    src: url('../fonts/MapleMono-NF-CN-Regular.ttf') format('truetype');
+}
+
+/* 粗体 */
+@font-face {
+    font-family: 'MapleMono NF CN';
+    font-display: swap;
+    font-weight: 700;
+    font-style: normal;
+    src: url('../fonts/MapleMono-NF-CN-Bold.ttf') format('truetype');
+}
+
+/* 粗斜体 */
+@font-face {
+    font-family: 'MapleMono NF CN';
+    font-display: swap;
+    font-weight: 700;
+    font-style: italic;
+    src: url('../fonts/MapleMono-NF-CN-BoldItalic.ttf') format('truetype');
+}
+
+/* 特粗体 */
+@font-face {
+    font-family: 'MapleMono NF CN';
+    font-display: swap;
+    font-weight: 800;
+    font-style: normal;
+    src: url('../fonts/MapleMono-NF-CN-ExtraBold.ttf') format('truetype');
+}
+
+/* 特粗斜体 */
+@font-face {
+    font-family: 'MapleMono NF CN';
+    font-display: swap;
+    font-weight: 800;
+    font-style: italic;
+    src: url('../fonts/MapleMono-NF-CN-ExtraBoldItalic.ttf') format('truetype');
+}
+
+/* 特细体 */
+@font-face {
+    font-family: 'MapleMono NF CN';
+    font-display: swap;
+    font-weight: 200;
+    font-style: normal;
+    src: url('../fonts/MapleMono-NF-CN-ExtraLight.ttf') format('truetype');
+}
+
+/* 特细斜体 */
+@font-face {
+    font-family: 'MapleMono NF CN';
+    font-display: swap;
+    font-weight: 200;
+    font-style: italic;
+    src: url('../fonts/MapleMono-NF-CN-ExtraLightItalic.ttf') format('truetype');
+}
+
+/* 斜体 */
+@font-face {
+    font-family: 'MapleMono NF CN';
+    font-display: swap;
+    font-weight: 400;
+    font-style: italic;
+    src: url('../fonts/MapleMono-NF-CN-Italic.ttf') format('truetype');
+}
+
+/* 细体 */
+@font-face {
+    font-family: 'MapleMono NF CN';
+    font-display: swap;
+    font-weight: 300;
+    font-style: normal;
+    src: url('../fonts/MapleMono-NF-CN-Light.ttf') format('truetype');
+}
+
+/* 细斜体 */
+@font-face {
+    font-family: 'MapleMono NF CN';
+    font-display: swap;
+    font-weight: 300;
+    font-style: italic;
+    src: url('../fonts/MapleMono-NF-CN-LightItalic.ttf') format('truetype');
+}
+
+/* 中等体 */
+@font-face {
+    font-family: 'MapleMono NF CN';
+    font-display: swap;
+    font-weight: 500;
+    font-style: normal;
+    src: url('../fonts/MapleMono-NF-CN-Medium.ttf') format('truetype');
+}
+
+/* 中等斜体 */
+@font-face {
+    font-family: 'MapleMono NF CN';
+    font-display: swap;
+    font-weight: 500;
+    font-style: italic;
+    src: url('../fonts/MapleMono-NF-CN-MediumItalic.ttf') format('truetype');
+}
+
+/* 半粗体 */
+@font-face {
+    font-family: 'MapleMono NF CN';
+    font-display: swap;
+    font-weight: 600;
+    font-style: normal;
+    src: url('../fonts/MapleMono-NF-CN-SemiBold.ttf') format('truetype');
+}
+
+/* 半粗斜体 */
+@font-face {
+    font-family: 'MapleMono NF CN';
+    font-display: swap;
+    font-weight: 600;
+    font-style: italic;
+    src: url('../fonts/MapleMono-NF-CN-SemiBoldItalic.ttf') format('truetype');
+}
+
+/* 极细体 */
+@font-face {
+    font-family: 'MapleMono NF CN';
+    font-display: swap;
+    font-weight: 100;
+    font-style: normal;
+    src: url('../fonts/MapleMono-NF-CN-Thin.ttf') format('truetype');
+}
+
+/* 极细斜体 */
+@font-face {
+    font-family: 'MapleMono NF CN';
+    font-display: swap;
+    font-weight: 100;
+    font-style: italic;
+    src: url('../fonts/MapleMono-NF-CN-ThinItalic.ttf') format('truetype');
+}
+
 .audio{
   width:100%;
 }
@@ -75,8 +219,16 @@
 
 
 body{
-    font-family: 'A-OTF Shin Go Pro R Sub','Roboto Condensed', sans-serif;
+    font-family: 'A-OTF Shin Go Pro R Sub', 'Roboto Condensed', sans-serif;
     font-weight: 400;
+}
+
+#article-container pre, #article-container code {
+    font-family: 'MapleMono NF CN', monospace !important;
+}
+
+#article-container figure.highlight{
+    font-family: monospace;
 }
 
 div#bilibiliLink:hover {
