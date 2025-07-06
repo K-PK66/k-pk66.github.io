@@ -228,11 +228,7 @@ body{
 }
 
 #article-container figure.highlight{
-    font-family: monospace;
-}
-
-#recent-posts > .recent-post-item >.recent-post-info > .content {
-    font-family: 'A-OTF Shin Go Pro R';
+    font-family: 'A-OTF Shin Go Pro L';
 }
 
 div#bilibiliLink:hover {
