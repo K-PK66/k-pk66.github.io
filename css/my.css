@@ -231,6 +231,10 @@ body{
     font-family: monospace;
 }
 
+#recent-posts > .recent-post-item >.recent-post-info > .content {
+    font-family: 'A-OTF Shin Go Pro R';
+}
+
 div#bilibiliLink:hover {
     border: 1px solid #f1bcd8 !important; /*边框颜色*/
     background-color: #f1bcd8; /*DiV背景颜色*/
