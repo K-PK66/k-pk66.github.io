@@ -227,10 +227,6 @@ body{
     font-family: 'MapleMono NF CN', monospace !important;
 }
 
-#article-container figure.highlight{
-    font-family: 'A-OTF Shin Go Pro L';
-}
-
 div#bilibiliLink:hover {
     border: 1px solid #f1bcd8 !important; /*边框颜色*/
     background-color: #f1bcd8; /*DiV背景颜色*/
