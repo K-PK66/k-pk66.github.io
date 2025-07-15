@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>Swift语言重拾记</title>
+      <link href="/2025/08/04/swift4hsbc/"/>
+      <url>/2025/08/04/swift4hsbc/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p><strong>前情提要：</strong><br>因2025年7月9日工作项目调度期间发生的一系列巧合，笔者误打误撞地主动选择了汇丰银行的苹果（iOS）平台应用程式开发项目参与工作。笔者早在2021年就已接触过作为iOS平台软件开发语言的Swift，但技术能力尚薄；而作为苹果手机用户的笔者一想到自己也会用这个应用程序，进而脑海中出现了使用软件时发生因自己技艺不精而招致崩溃的画面，最终顿时倍感压力，于是决定从头开始仔细学习Swift语言。<br>本文就是在这样一个大背景下诞生的；主要旨在记录Swift语言重学过程中的心得，因此不会涉及商业机密。</p></blockquote><p>为什么写这篇文章已经在前情提要里写的很清楚了。用处优先，一些和工作关联性不大的非代码知识不再在本文赘述。</p><blockquote><p>本文使用的Swift语言是6.0版本，代码对应输出结果基于Xcode 16.4建立的macOS Command Line Tool在控制台上的运行结果。</p></blockquote><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> Foundation</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;Hello, Swift!&quot;</span>)</span><br></pre></td></tr></table></figure><p>显然，运行的结果如下所示。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Hello, Swift!</span><br><span class="line">Program ended with exit code: 0</span><br></pre></td></tr></table></figure><h2 id="Re-变量与常量">Re: 变量与常量</h2><p>Swift语言与javascript语言一样通过<code>var</code>宣言变量，并通过<code>let</code>宣言常量。</p><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> Foundation</span><br><span class="line"><span class="keyword">var</span> x <span class="operator">=</span> <span class="number">1</span>, y <span class="operator">=</span> <span class="number">2</span></span><br><span class="line"><span class="built_in">print</span>(x, y)</span><br><span class="line">x <span class="operator">=</span> <span class="number">2</span></span><br><span class="line"><span class="built_in">print</span>(x)</span><br><span class="line"><span class="keyword">let</span> z <span class="operator">=</span> <span class="number">3</span></span><br></pre></td></tr></table></figure><p>上方内容运行的结果如下所示。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1 2</span><br><span class="line">2</span><br><span class="line">Program ended with exit code: 0</span><br></pre></td></tr></table></figure><p>若对上方代码中的<code>z</code>尝试通过与第4行相同的方式进行修改，则会报错<code>Cannot assign to value: 'z' is a 'let' constant</code>；这是因为，<code>z</code>是一个无法改变的常量。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Work </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> #work_log# </tag>
+            
+            <tag> #swift_the_programming_language# </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>汇丰岗前培训日志（Week 2）</title>
       <link href="/2025/07/14/hsbc-trainings-w2/"/>
       <url>/2025/07/14/hsbc-trainings-w2/</url>
@@ -25,33 +52,6 @@
             <tag> #mysql# </tag>
             
             <tag> #javascript# </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Swift语言重拾记</title>
-      <link href="/2025/07/09/swift4hsbc/"/>
-      <url>/2025/07/09/swift4hsbc/</url>
-      
-        <content type="html"><![CDATA[<blockquote><p><strong>前情提要：</strong><br>因2025年7月9日工作项目调度期间发生的一系列巧合，笔者误打误撞地主动选择了汇丰银行的苹果（iOS）平台应用程式开发项目参与工作。笔者早在2021年就已接触过作为iOS平台软件开发语言的Swift，但技术能力尚薄；而作为苹果手机用户的笔者一想到自己也会用这个应用程序，进而脑海中出现了使用软件时发生因自己技艺不精而招致崩溃的画面，最终顿时倍感压力，于是决定从头开始仔细学习Swift语言。<br>本文就是在这样一个大背景下诞生的；主要旨在记录Swift语言重学过程中的心得，因此不会涉及商业机密。</p></blockquote><p>为什么写这篇文章已经在前情提要里写的很清楚了。用处优先，一些和工作关联性不大的非代码知识不再在本文赘述。</p><blockquote><p>本文使用的Swift语言是6.0版本，代码对应输出结果基于Xcode 16.4建立的macOS Command Line Tool在控制台上的运行结果。</p></blockquote><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> Foundation</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;Hello, Swift!&quot;</span>)</span><br></pre></td></tr></table></figure><p>显然，运行的结果如下所示。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Hello, Swift!</span><br><span class="line">Program ended with exit code: 0</span><br></pre></td></tr></table></figure><h2 id="Re-变量与常量">Re: 变量与常量</h2><p>Swift语言与javascript语言一样通过<code>var</code>宣言变量，并通过<code>let</code>宣言常量。</p><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> Foundation</span><br><span class="line"><span class="keyword">var</span> x <span class="operator">=</span> <span class="number">1</span>, y <span class="operator">=</span> <span class="number">2</span></span><br><span class="line"><span class="built_in">print</span>(x, y)</span><br><span class="line">x <span class="operator">=</span> <span class="number">2</span></span><br><span class="line"><span class="built_in">print</span>(x)</span><br><span class="line"><span class="keyword">let</span> z <span class="operator">=</span> <span class="number">3</span></span><br></pre></td></tr></table></figure><p>上方内容运行的结果如下所示。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1 2</span><br><span class="line">2</span><br><span class="line">Program ended with exit code: 0</span><br></pre></td></tr></table></figure><p>若对上方代码中的<code>z</code>尝试通过与第4行相同的方式进行修改，则会报错<code>Cannot assign to value: 'z' is a 'let' constant</code>；这是因为，<code>z</code>是一个无法改变的常量。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Work </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> #work_log# </tag>
-            
-            <tag> #swift_the_programming_language# </tag>
             
         </tags>
       
